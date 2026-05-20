@@ -1,0 +1,41 @@
+@baseUrl = http://localhost:3000
+
+
+
+# Post - create new player (expect 201) nation: Georgia
+POST {{baseUrl}}/players
+Content-Type: application/json
+
+{
+  "name": "Khvicha Kvaratskhelia2",
+  "nation": "Georgia",
+  "position": "Forward",
+  "age": 23
+}
+
+
+# Post - create new player (expect 201) nation: Argentina
+
+POST {{baseUrl}}/players
+Content-Type: application/json
+
+{
+  "name": "Leo Messi",
+  "nation": "Argentina",
+  "position": "Forward",
+  "age": 36
+}
+
+
+
+# Post - create new player (expect 201) nation: Portugal
+
+POST {{baseUrl}}/players
+Content-Type: application/json
+
+{
+  "name": "Cristiano Ronaldo",
+  "nation": "Portugal",
+  "position": "Forward",
+  "age": 36
+}

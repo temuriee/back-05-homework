@@ -1,0 +1,20 @@
+@baseUrl = http://localhost:3000
+###
+
+
+# DELETE - no role (expect 403)
+DELETE {{baseUrl}}/players/PLAYER_ID
+Accept: application/json
+
+
+# DELETE - with admin role (expect 200)
+
+DELETE {{baseUrl}}/players/PLAYER_ID
+x-role: admin
+Accept: application/json
+
+# DELETE - delete all players with admin role (expect 200)
+
+DELETE {{baseUrl}}/players
+x-role: admin
+Accept: application/json

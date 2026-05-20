@@ -1,0 +1,21 @@
+@baseUrl = http://localhost:3000
+###
+
+
+# Get - about endpoint (expect 200)
+GET {{baseUrl}}/about
+Accept: application/json
+
+GET {{baseUrl}}/players
+Accept: application/json
+
+GET {{baseUrl}}/players?nation=georgia
+Accept: application/json
+
+
+GET {{baseUrl}}/players?nation=argentina
+Accept: application/json
+
+
+GET {{baseUrl}}/players?nation=portugal
+Accept: application/json
